@@ -1,0 +1,612 @@
+body{
+	font-family: nesobrite, time new roman, serif;
+	background-color: white;
+	margin: 0;
+	/*font-size: 12px;*/
+}
+#main{
+	width: 980px;
+	min-height: 980px;
+	margin: 0 auto;
+	padding:0 0 40px 0;
+}
+/*FONTY*/
+@font-face{
+	font-family: bk;
+	src: url(../font/ufonts.com_nesobriteexbk-regular.ttf);
+}
+@font-face{
+	font-family: bl;
+	src: url(../font/ufonts.com_nesobriteexbl-regular.ttf);
+}
+/*HEADER*/
+#main header {
+	height: 150px;	
+}
+#main header #header-top{
+	height: 80px;	
+	padding-top: 20px;/*
+	padding-bottom: 27px;*/
+}
+#main header #header-top #logo {	
+	width: 250px;
+	position: relative;
+	float: left;
+	margin-left: 10px;
+}
+#main header #prihlasit{
+	position: relative;
+	float: right;
+	margin: 60px 20px 0 0;
+	text-align: right;
+	opacity: 0.9;
+}
+#main header #prihlasit img{
+    padding-right: 5px;
+}
+#main header #prihlasit a{
+	text-decoration: none;
+	font-weight: bold;	
+	color: #333333;
+}
+#main header #prihlasit a:hover{
+	text-decoration: underline;
+	color: #660000;
+}
+/*MENU*/
+#main header nav {
+	display: block;
+	height: 50px;
+	width: 100%;
+	background-color: #333333;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#main header nav ul{
+	/*margin: 0;*/
+	height: 50px;
+	-webkit-padding-start: 0px;
+	-webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+	margin-top: 5px;
+	color: #666666;
+}
+#main header .menu ul li {
+   display: inline-block;
+   text-align: center;
+  	padding: 15px 0 16px 0;
+  	margin-left: -7px;
+}
+#main header .menu ul li:first-child{
+	margin-left:0; 
+}
+#main header .menu ul li:first-child:hover{
+	border: none;
+	margin-left:0; 
+	border-radius: 5px 0 0 5px;
+}
+#main header .menu ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 12px;
+   text-transform:uppercase;
+   font-family: "bl";
+   padding: 20px 9px 19px 9px;
+}
+#main header .menu ul li:hover{
+	background-color: #666666;
+}
+/*SLIDER*/
+#main #slider{
+	width: 100%;
+	height: 400px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+#main #slider .slider-popis{
+	height: 400px;
+	width: 300px;
+	background-color: white;
+	opacity: 0.8;
+	/*position: absolute;
+    top: 0;
+    margin-left: 680px;*/
+	position: relative;
+	float: right;
+}
+#main #slider .slider-popis p{
+	padding: 0 10px; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#main #slider .slider-popis .typslider{
+	padding-top: 40px;
+	font-family: bk;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333333;
+}
+#main #slider .slider-popis .modelslider{
+	font-family: bk;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	padding: 10px 10px 20px 10px;
+}
+#main #slider .slider-popis .popisslider{
+	color: #757575;
+	font-size: 12px;
+	padding-bottom: 18px;
+}
+#main #slider .slider-popis .cena{
+	padding-top: 7px;
+}
+#main #slider .slider-popis .rezervovatslider{
+	position: absolute;
+	bottom: 30px;
+	width: 108px;
+	/*height: 12px;*/
+	font-size: 14px;
+	background-color: #333333;
+	text-align: center;
+	padding: 9px 0;
+	opacity: 0.9;
+	border-radius: 0 5px 5px 0;
+}
+#main #slider .slider-popis .rezervovatslider a{
+	text-decoration: none;
+	color: white;
+	font-family: "bk";
+	vertical-align:middle;
+}
+#main #slider .slider-popis .rezervovatslider:hover{
+	background-color: #660000;
+}
+#main #slider .owl-controls {
+	position: absolute;
+	top: 0;
+	width: 680px;
+	height: 400px;
+}
+#main #slider .owl-controls  .owl-pagination {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	height: 20px;
+	padding-left: 0; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#main #slider .owl-controls .owl-pagination .owl-page {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	margin-right: 5px;
+}
+#main #slider .owl-controls  .owl-pagination .owl-page:hover{
+	background-color: #660000;
+}
+#main .owl-controls  .owl-pagination .active{
+	background-color: #333333!important;
+}
+#slider .item {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+/*CONTENT*/
+#main #content {
+	margin-top: 26px;
+	margin-bottom: 40px;
+	font-size: 12px;
+}
+#main #content h1,h2{
+	font-family: "bl";
+	color: #333333;
+	text-transform:uppercase;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-bottom: 16px;
+	border-bottom: solid #cccccc 1px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#main #content #content-left h2,h1{
+	padding-left: 10px;
+}
+#main #content p a{
+	color: #757575;
+}
+#main #content p a:hover{
+	color: #993333;	
+}
+#main #content #content-left{
+	width: 640px;
+	position: relative;
+	float: left;
+	padding: 0 0 16px 0;
+	color: #757575;
+}
+#main #content #nasvozovypark p{
+	padding: 0 10px;
+}
+#main #content #zobrazitvsetky{
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+#main #content #zobrazitvsetky a{
+	color: #cccccc;
+	font-size: 10px;
+	text-decoration: none;
+}#main #content #zobrazitvsetky a:hover{
+	color:#993333;
+}
+#main #content .stlpec1{
+	width: 300px;
+	position: relative;
+	float: left;
+	padding: 30px 20px 37px 0;
+}
+#main #content .stlpec1 p {
+	padding-left: 10px;
+}
+#main #content .stlpec2 p {
+	padding-left: 10px;
+}
+#main #content .stlpec2{
+	width: 300px;
+	position: relative;
+	float: left;
+	padding: 30px 0 27px 20px;
+}
+#main .red{
+	color: #993333;
+	text-transform:none;
+	font-size: 16px;
+	font-weight: bold;
+}
+#main .cena{
+	color: #999999;
+	text-transform:uppercase;
+	font-size: 12px;
+}
+#main .hindex{
+	vertical-align: super;
+	font-size: 7px
+}
+#main #content h3{
+	font-family: bl;
+	font-size: 16px;
+	color: black;
+	padding: 0 10px;
+}
+
+#main #content #content-left>p{
+	padding: 0 10px;
+}
+#main #content .rezervovat{
+	width: 128px;
+	height: 12px;
+	font-size: 14px;
+	background-color: #333333;
+	text-align: center;
+	padding:8px 0 10px 0 ;	
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#main #content .rezervovat:hover{
+	background-color: #660000;
+}
+#main #content .rezervovat a{
+	text-decoration: none;
+	color: white;
+	font-family: "bk";
+}
+#main #content #stlpec3 {
+	color:#757575;
+	position: relative;
+	float: right;
+	width: 300px;
+}	
+#main #content #stlpec3 p{
+	padding: 0 10px;
+}
+#main #content #stlpec3  .padingtop{
+	padding-top: 30px;
+	margin-top:0;
+}
+/*AUTOPARK*/
+#main #content h2 .trieda{
+	color: #999999;
+	text-transform: none;
+}
+#main #content .autopark .stlpec2{
+	padding-left:0px;
+	width: 320px;
+}
+#main #content .autopark h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 27px 0 0 10px;
+	margin-bottom: -10px
+}
+#main #content .autopark .stlpec2 p:first-child{
+	margin-top: 0;
+}
+#main #content .pravocervena{
+	color: #993333;
+	text-align: right;
+	right: 0;
+	position: absolute;
+	font-weight: bold;
+}
+#main #content .nadpisautopark{
+	color: #333333;
+	font-weight: bold;
+}
+#main #content .menuautopark{
+	width: 640px;
+	clear: both;
+	height: 30px;	
+}
+#main #content .menuautopark ul{
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#main #content .menuautopark ul li{
+	width: 100px;
+	height: 10px;
+	margin-left: -2px;
+	background-color: #666666;
+	color: white;	
+	font-size: 10px;
+	display: inline-block;
+	padding: 11px 10px 9px 10px;	
+}
+#main #content .menuautopark ul li:first-child{
+	width: 128px;
+	height: 12px;
+	font-size: 12px;
+	background-color: #333333;
+	text-align: center;
+	padding: 9px 0 9px 0;	
+	margin: 0;
+	opacity: 0.9;
+	border-radius: 5px 0 0 5px;
+}
+#main #content .menuautopark ul li:last-child{
+	border-radius: 0 5px 5px 0;
+}
+#main #content .menuautopark ul li:first-child:hover{
+	background-color: #660000;	
+}
+#main #content .menuautopark ul li a {
+	text-decoration: none;
+	color: white;
+	font-family: "bk";
+}
+#main #content .menuautopark .vpravo{
+	float: right;
+	font-size: 10px;
+	font-weight: bold;
+}
+/*CENNIK*/
+#main #content table {
+	width: 100%;
+	padding: 0px 10px 25px 10px;
+}
+#main #content table tr td{
+	color: #999999;
+}
+#main #content table tr td a{
+	color: #757575;
+}
+#main #content table tr td a:hover{
+	color: #993333;
+}
+#main #content table th {
+	text-transform: uppercase;
+	color: #993333;
+	text-align: left;	
+}
+#main #content table th h3{
+	padding: 0;
+}
+#main #content table th:first-child {
+	text-transform: none; 
+}
+#main #content #cennikpopis{
+	border-top: 1px solid #cccccc;
+}
+#main #content #cennikpopis p{
+	padding: 4px 10px;
+	margin: 0;
+	color: #757575;
+}
+#main #content #cennikpopis p:first-child{
+	font-weight: bold;
+	padding-top: 30px;
+	color: #333333;
+}
+#main #content  #cennikpopis #cenikpopispopisu {
+	color: #999999;
+	padding-top: 18px;
+}
+#main #content h2+img {
+	padding-top: 20px; 
+}
+/* RESERVATION, CONTACT FORM*/
+#main #content #rezervacia #stlpec3,.stlpec2,.stlpec1 {
+	padding-top:30px;
+	padding-bottom: 25px!important; 	 
+}
+#main #content #kontakt #stlpec3,.stlpec2,.stlpec1 {
+	padding-top:30px;
+	padding-bottom: 25px!important; 	 
+}
+#main #content #kontakt #stlpec3 p:first-child{
+	padding-top:44px;
+	margin-top: 0;
+}
+#main #content #kontakt #stlpec3 p{
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+#main #content textarea{
+	height: 73px!important;  
+	border: solid 1px #757575;
+	width: 278px;
+	padding: 10px 10px;
+	display: block;
+	color: #757575;
+	background-color: #f5f5f5;
+}
+#main #content textarea:focus {
+	border: solid 1px #993333;
+	background-color: #fff8f8; 
+	color: #993333;
+	outline: none;
+}
+#main #content select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+ 	background: url(../img/v.png) no-repeat 279px 10px; 
+ 	background-color: #f5f5f5;   
+ 	text-indent: 0.01px; 
+ 	border: solid 1px #757575;
+ 	height: 30px;
+ 	width: 100%;
+	display: block;
+	color: #757575
+}
+#main #content select:focus{
+	border: solid 1px #993333;
+	background-color: #fff8f8; 
+	color: #993333;
+	outline: none;
+}
+#main #content input[type='text'] {
+	padding: 0 10px;
+	border: solid 1px #666666;
+	width: 278px;
+	display: block;
+	color: #757575;
+	height: 28px;
+	background-color: #f5f5f5;
+}
+#main #content input[type='text']:focus {
+	border: solid 1px #993333;
+	background-color: #fff8f8; 
+	color: #993333;
+	outline: none;
+}
+#main #content label{
+	padding: 15px 0 0 10px;
+	display: block;
+	color: #333333;
+	height: 20px;
+	font-weight: bold;
+}
+#main #content #odoslat{
+	clear: both;
+	width: 90px;
+	height: 30px;
+	font-size: 12px;
+	background-color: #333333;
+	color: white;
+	border: none;
+	display: block;
+	font: 14px nesobrite;
+	opacity: 0.9;
+	border-radius: 5px;
+}
+#main #content #odoslat:hover{
+	background-color: #660000;
+}
+#main #content #rezervaciapopis {
+	color: #999999;
+	padding: 18px 0 0 10px;
+	margin-top: 0;
+}
+#main #content .bold{
+	font-weight: bold;
+	color: #333333;
+}
+/* FOOTER */
+#main footer{
+	height: 68px;
+	width: 100%;
+	position: relative;
+	clear: both;
+	border-top: solid #cccccc 1px;
+	padding-top: 27px;    
+}
+#main footer nav ul{
+	margin: 0;
+	margin-left: 2px;
+	padding-left:0; 
+	font-size: 12px;
+	color: #cccccc;
+}
+#main footer nav ul li {
+   display: inline-block;
+   text-align: center;
+}
+#main footer nav ul li a {
+   color: #555555;
+   padding-right: 9px;
+   padding-left: 9px;
+   text-decoration: none;
+   font-size: 12px;
+   text-transform:uppercase;
+   /*font-family: "bk";*/
+}
+#main footer nav ul li a:hover{
+	color: #993333;
+}
+#main footer #vytvoril{
+	font-size: 10px;
+	color: #555555;
+	position: absolute;
+	right: 9px;
+	top: 27px;
+}
+#main footer .siva{
+	color: #b4b4b4;
+}
+#main footer #prava{
+	clear: both;
+	font-size: 10px;
+	padding: 12px 0 0 10px;
+}
+#content-all p{
+	padding:0 20px;
+}
+.content-gallery img {
+	border-radius: 5px; 
+	margin-bottom: 10px; 
+	width: 230px;
+}
+.box{
+	float: left;
+	margin: 0 5px;
+}
+#googleMap{
+	width:90%;
+	height:400px;
+	margin: auto;
+}
+#main #content .popisservis{
+	color: #999999;
+	text-transform: none;
+	font-size: 10px;
+}
+
+
+
+
+
