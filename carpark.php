@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+
 <title>Autocentrum MP</title>
+
+<meta charset="utf-8">
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="robots" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
 <link href="css/style.css" rel="stylesheet">
+
 <script src="js/jquery-1.9.1.min.js"></script>
+<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 <script src="js/scripts.js"></script>
+
 </head>
 <body>
     <div id="main" class="clearfix">
@@ -21,6 +29,7 @@
 					 <a href="#"><img src="img/panacik.jpg" alt="prihlasenie">Prihlásiť</a></p> 
 				</div>	
 			</div>
+			<span class="menu_click">MENU</span>
             <nav class="menu">
                 <ul>
                     <li><a href="index.php">Úvod</a>|</li>

@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+
 <title>Autocentrum MP</title>
+
+<meta charset="utf-8">
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="robots" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
 <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 <script src="js/jquery-1.9.1.min.js"></script>
+<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 <script src="js/scripts.js"></script>
+
 </head>
 <body>
     <div id="main" class="clearfix">
@@ -21,6 +31,7 @@
 					 <a href="#"><img src="img/panacik.jpg" alt="prihlasenie">Prihlásiť</a></p> 
 				</div>	
 			</div>
+			<span class="menu_click">MENU</span>
             <nav class="menu">
                 <ul>
                     <li><a href="index.php">Úvod</a>|</li>
@@ -55,21 +66,21 @@
 				<div class="stlpec1">
 					<h3>Napíšte nám</h3>
 					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
-					<form name="kontakt" id="kontakt" action="contact.php" method="POST">
+					<form name="kontakt" id="kontaktform" action="contact.php" method="POST">
 						<label for="adresat">Adresát <span class="red">*</span></label>
-							<select name="adresat" id="adresat" class="custom"> 
+							<select name="adresat" id="adresat" class="custom" required> 
 									<option selected='selected'>Autopožičovňa</option>
 									<option>Servis</option>
 									<option>Autofólie</option>
 							</select>
 						<label for='meno'>Meno a Priezvisko <span class="red">*</span></label>
-							<input id="meno" name="meno" type="text" value="Sndrej Prikladny">
+							<input id="meno" name="meno" type="text" value="" required>
 						<label for='email'>Email <span class="red">*</span></label>
-							<input id="email" name="email" type="text" value="">
+							<input id="email" name="email" type="email" value="" required>
 						<label for='tel'>Telefón</label>
 							<input id="tel" name="tel" type="text" value="">
 						<label for='sprava'>Správa <span class="red">*</span></label>
-							<textarea name="sprava" id="sprava"></textarea>
+							<textarea name="sprava" id="sprava" required></textarea>
 						<br />
 						<input name="odoslat" id="odoslat" type="submit" value="Odoslať">
 						<p id="rezervaciapopis"><span class="red">*</span> POLIA OZNAČENÉ HVIEZDIČKOU JE POTREBNE VYPLNIŤ.</p>
